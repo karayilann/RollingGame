@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - mini
+  - toplama
   layers:
   - Default
   - TransparentFX

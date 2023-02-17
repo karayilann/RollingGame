@@ -5,6 +5,7 @@ using UnityEngine;
 public class sound : MonoBehaviour
 {
     AudioSource ses;
+    public AudioClip point, wrong;
     
     void Start()
     {
@@ -15,9 +16,15 @@ public class sound : MonoBehaviour
     {
         if(temas.gameObject.tag == "mini")
         {
-            ses.Play();
-            
+            ses.PlayOneShot(point);
+
         }
+        
+        if(temas.gameObject.tag == "toplama")
+        {
+            ses.PlayOneShot(wrong);
+        }
+    
     }
 
 }
